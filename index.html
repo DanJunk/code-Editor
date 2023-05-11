@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Code-Editor</title>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Code-Inputs for HTML, CSS and JS -->
+        <div class="left">
+            <!-- Input HTML -->
+            <div class="input">
+                <label for="html">
+                    HTML</label>
+                <textarea name="html" id="html" placeholder="Enter HTML Markup" spellcheck="false"
+                    title="HTML Markup Area"></textarea>
+            </div>
+            <!-- Input CSS -->
+            <div class="input">
+                <label for="css">
+                    CSS</label>
+                <textarea name="css" id="css" placeholder="Enter CSS Code" spellcheck="false"
+                    title="CSS Style Area"></textarea>
+            </div>
+            <!-- Input JS -->
+            <div class="input">
+                <label for="javascript">
+                    JS</label>
+                <textarea name="javascript" id="javascript" placeholder="Enter JavaScript Code" spellcheck="false"
+                    title="JavaScript Code Area"></textarea>
+            </div>
+
+        </div>
+        <!-- Evaluated Output-Window -->
+        <div class="right">
+            <label for="output">
+                Output</label>
+            <iframe id="output" title="Resulting Website Output"></iframe>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
